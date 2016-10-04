@@ -8,8 +8,8 @@ namespace ComicBookGallery.Controllers
 {
     public class ComicBookController: Controller
     {
-        public string Detail() {
-            return "Hello from the Comic Book Controller";
+        public ContentResult  Detail() {
+            return new ContentResult() { Content = "Hello from the Comic Book Controller"  };
         } 
     }
 }
